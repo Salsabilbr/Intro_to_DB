@@ -9,12 +9,10 @@ CREATE TABLE books (
   stock_quantity INT NOT NULL  
 );  
   
-CREATE TABLE authors (  
-  author_id INT PRIMARY KEY AUTO_INCREMENT,  
-  first_name VARCHAR(50) NOT NULL,  
-  last_name VARCHAR(50) NOT NULL,  
-  bio TEXT  
-);  
+CREATE TABLE authors (
+  author_id INT PRIMARY KEY AUTO_INCREMENT,
+  author_name VARCHAR(100) NOT NULL
+);
   
 CREATE TABLE customers (  
   customer_id INT PRIMARY KEY AUTO_INCREMENT,  
