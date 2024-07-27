@@ -14,13 +14,12 @@ CREATE TABLE Authors (
   author_name VARCHAR(100) NOT NULL
 );
   
-CREATE TABLE Customers (  
-  customer_id INT PRIMARY KEY AUTO_INCREMENT,  
-  first_name VARCHAR(50) NOT NULL,  
-  last_name VARCHAR(50) NOT NULL,  
-  email VARCHAR(100) NOT NULL,  
-  phone VARCHAR(20) NOT NULL,  
-  address VARCHAR(255) NOT NULL  
+CREATE TABLE Customers ( 
+  customer_id INT PRIMARY KEY AUTO_INCREMENT,
+  customer_name VARCHAR(215) NOT NULL,
+  email VARCHAR(215) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  address TEXT NOT NULL
 );  
   
 CREATE TABLE Orders (  
