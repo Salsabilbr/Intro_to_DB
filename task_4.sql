@@ -1,4 +1,4 @@
-USE alx_book_store;  
+iUSE alx_book_store;  
   
 SELECT  
   COLUMN_NAME,  
@@ -9,9 +9,10 @@ SELECT  
   COLUMN_DEFAULT,  
   IS_NULLABLE,  
   COLUMN_KEY,  
-  EXTRA  
+  EXTRA
+  COLUMN_TYPE
+  
 FROM  
   INFORMATION_SCHEMA.COLUMNS  
 WHERE  
-  TABLE_NAME = 'books' AND TABLE_SCHEMA = 'alx_book_store';
-
+  TABLE_NAME = 'Books' AND TABLE_SCHEMA = 'alx_book_store';
